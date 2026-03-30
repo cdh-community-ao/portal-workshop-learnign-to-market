@@ -1,0 +1,24 @@
+{
+  "name": "portal-workshop-learnign-to-market",
+  "version": "1.0.0",
+  "description": "Guia do Workshop do Aprendizado ao mercado de Trabalho",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdh-community-ao/portal-workshop-learnign-to-market.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cdh-community-ao/portal-workshop-learnign-to-market/issues"
+  },
+  "homepage": "https://github.com/cdh-community-ao/portal-workshop-learnign-to-market#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2"
+  }
+}
