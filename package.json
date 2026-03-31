@@ -4,7 +4,10 @@
   "description": "Guia do Workshop do Aprendizado ao mercado de Trabalho",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,9 @@
   "homepage": "https://github.com/cdh-community-ao/portal-workshop-learnign-to-market#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "vite": "^8.0.3"
   }
 }
