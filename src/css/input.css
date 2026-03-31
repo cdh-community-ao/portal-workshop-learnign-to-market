@@ -8,3 +8,7 @@
     --color-laranja: #e8890e;
     --color-cinza: #5d666d;
 }
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
