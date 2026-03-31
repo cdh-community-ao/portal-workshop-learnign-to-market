@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme{
+    --color-workshop: #81b3b0;
+    --color-tema: #e9903b;
+}
