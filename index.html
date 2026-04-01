@@ -6,7 +6,7 @@
         
         <link rel="shortcut icon" href="./src/img/icone-cdh.png" type="image/png">
         <link href="./src/css/input.css" rel="stylesheet">
-        <link href="./src/css/style.css" rel="stylesheet">
+        <link href="./src/css/participantes.css" rel="stylesheet">
 
         <title>WORKSHOP | CDH && PodNerd</title>
     </head>
@@ -238,25 +238,25 @@
                 </div>
             </section>
 
-            <section class="participantes p-4">
-                  <header>
-  <h1>Participantes</h1>
-  <input type="text" id="search" placeholder="Pesquisar participante...">
-</header>
+            <section class="participantes text-white p-4">
+                <div class="header-participantes">
+                    <h2>Participantes</h2>
+                    <input type="text" id="search" placeholder="Pesquisar participante...">
+                </div>
+                
+                <div class="listas">
+                    <button onclick="trocarLista('convidados', event)" class="active">Convidados</button>
+                    <button onclick="trocarLista('reservas', event)">Reservas</button>
+                    <button onclick="trocarLista('instituicoes', event)">Instituições</button>
+                </div>
+                
+                <div class="sub-listas hidden" id="subInstituicoes">
+                    <button onclick="filtrarInstituicao('inst1')">Mensageiro</button>
+                    <button onclick="filtrarInstituicao('inst2')">JGM</button>
+                    <button onclick="filtrarInstituicao('inst3')">Tchimina</button>
+                </div>
 
-<div class="tabs">
-  <button onclick="trocarLista('convidados', event)" class="active">Convidados</button>
-  <button onclick="trocarLista('reservas', event)">Reservas</button>
-  <button onclick="trocarLista('instituicoes', event)">Instituições</button>
-</div>
-
-<div class="sub-tabs hidden" id="subInstituicoes">
-  <button onclick="filtrarInstituicao('inst1')">Mensageiro</button>
-  <button onclick="filtrarInstituicao('inst2')">JGM</button>
-  <button onclick="filtrarInstituicao('inst3')">Tchimina</button>
-</div>
-
-<section class="grid" id="grid"></section> 
+                <div class="grid" id="grid"></div> 
             </section>
         </main>
 
@@ -266,7 +266,7 @@
 	        </section>
         </footer>
 
-        <script src="./src/js/script.js">
+        <script src="./src/js/participantes.js">
             document.getElementById("ano").innerHTML = new Date().getFullYear();
         </script>
         

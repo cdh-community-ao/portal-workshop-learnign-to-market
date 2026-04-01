@@ -1,12 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #0f172a;
-  color: white;
-}
-
-/* Header */
-header {
+/* Cabeçalho participnates */
+.header-participantes {
   padding: 20px;
   text-align: center;
 }
@@ -16,19 +9,19 @@ input {
   max-width: 400px;
   padding: 10px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #333;
   margin-top: 10px;
 }
 
-/* Tabs */
-.tabs {
+/*Listas */
+.listas {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 20px;
 }
 
-.tabs button {
+.listas button {
   padding: 10px 15px;
   border: none;
   background: #1e293b;
@@ -37,18 +30,18 @@ input {
   border-radius: 8px;
 }
 
-.tabs button.active {
+.listas button.active {
   background: #38bdf8;
   color: black;
 }
 
 /* Sub Tabs */
-.sub-tabs {
+.sub-listas {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.sub-tabs button {
+.sub-listas button {
   margin: 5px;
   padding: 8px;
   border: none;
@@ -87,9 +80,4 @@ input {
 
 .info {
   padding: 10px;
-}
-
-/* Utils */
-.hidden {
-  display: none;
 }

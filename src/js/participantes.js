@@ -33,7 +33,7 @@ function render(lista) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="https://via.placeholder.com/200">
+      <img src="https://via.placeholder.com/150">
       <div class="info">
         <h4>${p.nome}</h4>
         <p>${p.area}</p>
@@ -49,7 +49,7 @@ function trocarLista(tipo, event) {
   listaAtual = tipo;
   instituicaoAtual = null;
 
-  document.querySelectorAll(".tabs button").forEach(btn => btn.classList.remove("active"));
+  document.querySelectorAll(".listas button").forEach(btn => btn.classList.remove("active"));
   event.target.classList.add("active");
 
   document.getElementById("subInstituicoes")
@@ -86,5 +86,5 @@ document.getElementById("search").addEventListener("input", function () {
   render(filtrados);
 });
 
-/* Init */
+/* Iniciar */
 render(participantes.convidados);
