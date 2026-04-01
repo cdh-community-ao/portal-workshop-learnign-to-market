@@ -6,6 +6,7 @@
         
         <link rel="shortcut icon" href="./src/img/icone-cdh.png" type="image/png">
         <link href="./src/css/input.css" rel="stylesheet">
+        <link href="./src/css/style.css" rel="stylesheet">
 
         <title>WORKSHOP | CDH && PodNerd</title>
     </head>
@@ -237,153 +238,25 @@
                 </div>
             </section>
 
-            <section class="participantes bg-azul-petroleo p-4">
-                <h2 class="text-white text-center mt-4 font-semibold text-2xl">Participantes</h2>
-   
-                <div class="md:grid md:grid-cols-2 gap-4 justify-between">
-                    <article class="grid grid-cols-2 mt-6 w-full">
-                
-                        <div>
-                            <button onclick="toggleList('cv')" class="text-white font-bold mb-2 w-full text-left">
-                               Convidados ▼
-                             </button>
-                            <ul id="cv" class="hidden text-sm space-y-1">
-                                <li>Gracieth Dias</li>
-                                <li>Maria Chimuco</li>
-                                <li>Edson Chimuco</li>
-                                <li>Florindo Paciência</li>
-                            </ul>
-                        </div>
+            <section class="participantes p-4">
+                  <header>
+  <h1>Participantes do Evento</h1>
+  <input type="text" id="search" placeholder="Pesquisar participante...">
+</header>
 
-                        <div>
-                             <button onclick="toggleList('rs')" class="text-white font-bold mb-2 w-full text-left">
-                                Reservas ▼
-                             </button>
-                            <ul id="rs" class="hidden text-sm space-y-1">
-                                <li>Metulina Vasco</li>
-                                <li>Miguel Manuel</li>
-                                <li>Cesaltina Magalhães</li>
-                                <li>Ilídio Teixeira</li>
-                                <li>Stalony Eduardo</li>
-                                <li>Amélia Adelino</li>
-                                <li>Belino Alpedate</li>
-                                <li>Jacinto Afonso</li>
-                                <li>Upale Mucanda</li>
-                                <li>Abel Domingos</li>
-                                <li>Paulino Wongo</li>
-                                <li>Fernando Braz</li>
-                                <li>Sóstenes de Almeida</li>
-                                <li>José Tati</li>
-                                <li>Hermenegildo André</li>
-                                <li>Mário Redol</li>
-                                <li>Joana Muachissende</li>
-                                <li>Zacarias Bernardo </li>
-                                <li>Sara Carlos</li>
-                                <li>Ester Chilombo</li>
-                                <li>Artur Culivela</li>
-                                <li>Albertina Segunda</li>
-                            </ul>
-                        </div>
-                    </article>
+<div class="tabs">
+  <button onclick="trocarLista('convidados', event)" class="active">Convidados</button>
+  <button onclick="trocarLista('reservas', event)">Reservas</button>
+  <button onclick="trocarLista('instituicoes', event)">Instituições</button>
+</div>
 
-                    <article class="instituicoes mt-6">
-                        <h4 class="text-white font-medium  text-lg uppercase md:hidden text-center mb-6">Instituições</h4>
-       
-                        <div class="grid grid-cols-3 gap-4">
-   
-                            <div>
-                                <button onclick="toggleList('jgm')" class="text-white font-bold mb-2 w-full text-left">
-                                     JGM ▼
-                                </button>
-                                <ul id="jgm" class="hidden text-sm space-y-1">
-                                    <li>Alexandre Jamba</li>
-                                    <li>Francisco Costa</li>
-                                    <li>Madalena Mungongo</li>
-                                    <li>Samuel Epalanga</li>
-                                    <li>Edlasia Kaunda</li>
-                                    <li>José Sambundo</li>
-                                    <li>Delfina Júlio</li>
-                                    <li>Bernadeth Dumbo</li>
-                                    <li>Manuel Cardoso</li>
-                                    <li>Jenilza Luís</li>
-                                    <li>Edmilson Simões</li>
-                                    <li>Mônica Mário</li>
-                                    <li>Domingos Sandingui</li>
-                                    <li>José Júlio</li>
-                                    <li>Jenerosa João</li>
-                                    <li>Gabriel Sicato</li>
-                                    <li>Costantino Essuvi</li>
-                                    <li>António David</li>
-                                    <li>Celina Samandele</li>
-                                    <li>Justa Domingos</li>
-                                    <li>Abílio Celestino</li>
-                                    <li>Amélia de Jesus</li>
-                                    <li>Natália Chingueta</li>
-                                    <li>Rosalina Soma</li>
-                                    <li>António Sevambi</li>
-                                    <li>José Ch Epalanga</li>
-                                    <li>Anacleto Kapusso</li>
-                                    <li>Herculano Cinco</li>
-                                    <li>Adelaide Eianga</li>
-                                    <li>Isabel Adriano</li>
-                                </ul>
-                            </div>
+<div class="sub-tabs hidden" id="subInstituicoes">
+  <button onclick="filtrarInstituicao('inst1')">Empresa A</button>
+  <button onclick="filtrarInstituicao('inst2')">Empresa B</button>
+  <button onclick="filtrarInstituicao('inst3')">Universidade C</button>
+</div>
 
-                           <div>
-                                <button onclick="toggleList('ms')" class="text-white font-bold mb-2 w-full text-left">
-                                      Mensageiro ▼
-                                </button>
-                                <ul id="ms" class="hidden text-sm space-y-1">
-                                    <li>Alberto de Sousa</li>
-                                    <li>Aldemir Brito</li>
-                                    <li>Almir Chipiquita</li>
-                                    <li>Angélica Fela</li>
-                                    <li>Aurélio Ernesto</li>
-                                    <li>Bernardo Luís</li>
-                                    <li>Celson Banan</li>
-                                    <li>Cilisio Catombela</li>
-                                    <li>Constantino Gunza</li>
-                                    <li>Edgar Franco</li>
-                                    <li>Eduardo Roçada</li>
-                                    <li>Euclides Canhama</li>
-                                    <li>Eva Gomes</li>
-                                    <li>Faustino Malengue</li>
-                                    <li>Fernando Apolinário</li>
-                                    <li>Fernando Catombela</li>
-                                    <li>Gerônimo Manico</li>
-                                    <li>Invandro Porto Alegre</li>
-                                    <li>João Alberto</li>
-                                    <li>Kerem Mateus</li>
-                                    <li>Ladislau</li>
-                                    <li>Leusio Aguiar</li>
-                                    <li>Ludmira Licueno</li>
-                                    <li>Ludsilson Miranda</li>
-                                    <li>Luís Silva</li>
-                                    <li>Maria Luísa</li>
-                                    <li>Nelfláviane Novais</li>
-                                    <li>Violeta Vidro</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <button onclick="toggleList('tc')" class="text-white font-bold mb-2 w-full text-left">
-                                      Tchimina ▼
-                                </button>
-                                <ul id="tc" class="hidden text-sm space-y-1">
-                                     <li>André António</li>
-                                     <li>Ângelo Ângelo</li>
-                                     <li>Daniel Castowe</li>
-                                     <li>Estover Chilala</li>
-                                     <li>Evaristo Moises</li>
-                                     <li>Fidel Poutou</li>
-                                     <li>Francisco Tchimiku</li>
-                                     <li>João Brito Capitano</li>
-                                     <li>José Braz</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+<section class="grid" id="grid"></section> 
             </section>
         </main>
 
@@ -393,15 +266,9 @@
 	        </section>
         </footer>
 
-        <script>
+        <script src="./src/js/script.js">
             document.getElementById("ano").innerHTML = new Date().getFullYear();
         </script>
-
+        
     </body>
 </html>
-<script>
-function toggleList(id) {
-    const el = document.getElementById(id);
-    el.classList.toggle("hidden");
-}
-</script>
