@@ -174,3 +174,20 @@ document.getElementById("search").addEventListener("input", function () {
 
 /* Iniciar */
 render(participantes.convidados);
+
+//Seleciona o botão da lista e disponibiliza a lista
+document.querySelectorAll(".btn-lista").forEach(button => {
+  button.addEventListener("click", (event) => {
+    const tipo = event.target.getAttribute("data-tipo");
+    trocarLista(tipo, event);
+  });
+});
+
+
+// Seleciona todos os botões de instituição e adiciona o evento de clique
+document.querySelectorAll(".btn-inst").forEach(button => {
+  button.addEventListener("click", (event) => {
+    const inst = event.target.getAttribute("data-inst");
+    filtrarInstituicao(inst);
+  });
+});
