@@ -1,3 +1,7 @@
+//importando icone para usar como imagens do participantes
+import iconeCdh from '../img/icone-cdh.png';
+
+
 const participantes = {
   convidados: [
     { nome: "Maria Chimuco", area: "Convidada" },
@@ -119,7 +123,7 @@ function render(lista) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="./img/icone-cdh.png">
+      <img src="${iconeCdh}">
       <div class="info">
         <h4>${p.nome}</h4>
         <p>${p.area}</p>
