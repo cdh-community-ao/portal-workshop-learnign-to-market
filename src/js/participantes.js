@@ -119,7 +119,7 @@ function render(lista) {
     card.className = "card";
 
     card.innerHTML = `
-      <img src="/src/img/icone-cdh.png">
+      <img src="/../src/img/icone-cdh.png">
       <div class="info">
         <h4>${p.nome}</h4>
         <p>${p.area}</p>
