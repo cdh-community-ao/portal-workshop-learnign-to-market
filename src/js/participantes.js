@@ -111,7 +111,7 @@ let instituicaoAtual = null;
 
 /* Render */
 function render(lista) {
-  const grid = document.getElementById("grid");
+  const grid = document.getElementById("grid-elementos");
   grid.innerHTML = "";
 
   lista.forEach(p => {
