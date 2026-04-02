@@ -1,22 +1,108 @@
 const participantes = {
   convidados: [
-    { nome: "João Silva", area: "Dev" },
-    { nome: "Ana Costa", area: "Designer" }
+    { nome: "Maria Chimuco", area: "Convidada" },
+    { nome: "Gracieth Dias", area: "Convidada" },
+    { nome: "Edson Chimuco", area: "Convidada" },
+    { nome: "Florindo Paciência", area: "Convidada" }
   ],
-  reservas: [
-    { nome: "Carlos Mendes", area: "Redes" },
-    { nome: "Paula Gomes", area: "Suporte" }
-  ],
+  reservas:[
+  { nome: "Metulina Vasco", area: "Reserva" },
+  { nome: "Miguel Manuel", area: "Reserva" },
+  { nome: "Cesaltina Magalhães", area: "Reserva" },
+  { nome: "Ilídio Teixeira", area: "Reserva" },
+  { nome: "Stalony Eduardo", area: "Reserva" },
+  { nome: "Amélia Adelino", area: "Reserva" },
+  { nome: "Belino Alpedate", area: "Reserva" },
+  { nome: "Jacinto Afonso", area: "Reserva" },
+  { nome: "Upale Mucanda", area: "Reserva" },
+  { nome: "Abel Domingos", area: "Reserva" },
+  { nome: "Paulino Wongo", area: "Reserva" },
+  { nome: "Fernando Braz", area: "Reserva" },
+  { nome: "Sóstenes de Almeida", area: "Reserva" },
+  { nome: "José Tati", area: "Reserva" },
+  { nome: "Hermenegildo André", area: "Reserva" },
+  { nome: "Mário Redol", area: "Reserva" },
+  { nome: "Joana Muachissende", area: "Reserva" },
+  { nome: "Zacarias Bernardo", area: "Reserva" },
+  { nome: "Sara Carlos", area: "Reserva" },
+  { nome: "Ester Chilombo", area: "Reserva" },
+  { nome: "Artur Culivela", area: "Reserva" },
+  { nome: "Albertina Segunda", area: "Reserva" }
+],
   instituicoes: {
     inst1: [
-      { nome: "Empresa A - Pedro", area: "Gestor" }
-    ],
+      { nome: "Alexandre Jamba", area: "Estudante" },
+      { nome: "Francisco Costa", area: "Estudante" },
+      { nome: "Madalena Mungongo", area: "Estudante" },
+      { nome: "Samuel Epalanga", area: "Estudante" },
+      { nome: "Edlasia Kaunda", area: "Estudante" },
+      { nome: "José Sambundo", area: "Estudante" },
+      { nome: "Delfina Júlio", area: "Estudante" },
+      { nome: "Bernadeth Dumbo", area: "Estudante" },
+      { nome: "Manuel Cardoso", area: "Estudante" },
+      { nome: "Jenilza Luís", area: "Estudante" },
+      { nome: "Edmilson Simões", area: "Estudante" },
+      { nome: "Mônica Mário", area: "Estudante" },
+      { nome: "Domingos Sandingui", area: "Estudante" },
+      { nome: "José Júlio", area: "Estudante" },
+      { nome: "Jenerosa João", area: "Estudante" },
+      { nome: "Gabriel Sicato", area: "Estudante" },
+      { nome: "Costantino Essuvi", area: "Estudante" },
+      { nome: "António David", area: "Estudante" },
+      { nome: "Celina Samandele", area: "Estudante" },
+      { nome: "Justa Domingos", area: "Estudante" },
+      { nome: "Abílio Celestino", area: "Estudante" },
+      { nome: "Amélia de Jesus", area: "Estudante" },
+      { nome: "Natália Chingueta", area: "Estudante" },
+      { nome: "Rosalina Soma", area: "Estudante" },
+      { nome: "António Sevambi", area: "Estudante" },
+      { nome: "José Ch Epalanga", area: "Estudante" },
+      { nome: "Anacleto Kapusso", area: "Estudante" },
+      { nome: "Herculano Cinco", area: "Estudante" },
+      { nome: "Adelaide Eianga", area: "Estudante" },
+      { nome: "Isabel Adriano", area: "Estudante" }
+],
     inst2: [
-      { nome: "Empresa B - Marta", area: "Marketing" }
-    ],
+      { nome: "Alberto de Sousa", area: "Estudante" },
+      { nome: "Aldemir Brito", area: "Estudante" },
+      { nome: "Almir Chipiquita", area: "Estudante" },
+      { nome: "Angélica Fela", area: "Estudante" },
+      { nome: "Aurélio Ernesto", area: "Estudante" },
+      { nome: "Bernardo Luís", area: "Estudante" },
+      { nome: "Celson Banan", area: "Estudante" },
+      { nome: "Cilisio Catombela", area: "Estudante" },
+      { nome: "Constantino Gunza", area: "Estudante" },
+      { nome: "Edgar Franco", area: "Estudante" },
+      { nome: "Eduardo Roçada", area: "Estudante" },
+      { nome: "Euclides Canhama", area: "Estudante" },
+      { nome: "Eva Gomes", area: "Estudante" },
+      { nome: "Faustino Malengue", area: "Estudante" },
+      { nome: "Fernando Apolinário", area: "Estudante" },
+      { nome: "Fernando Catombela", area: "Estudante" },
+      { nome: "Gerônimo Manico", area: "Estudante" },
+      { nome: "Invandro Porto Alegre", area: "Estudante" },
+      { nome: "João Alberto", area: "Estudante" },
+      { nome: "Kerem Mateus", area: "Estudante" },
+      { nome: "Ladislau", area: "Estudante" },
+      { nome: "Leusio Aguiar", area: "Estudante" },
+      { nome: "Ludmira Licueno", area: "Estudante" },
+      { nome: "Ludsilson Miranda", area: "Estudante" },
+      { nome: "Luís Silva", area: "Estudante" },
+      { nome: "Maria Luísa", area: "Estudante" },
+      { nome: "Nelfláviane Novais", area: "Estudante" },
+      { nome: "Violeta Vidro", area: "Estudante" }
+],
     inst3: [
-      { nome: "Universidade C - Luís", area: "Professor" }
-    ]
+      { nome: "André António", area: "Docente" },
+      { nome: "Ângelo Ângelo", area: "Docente" },
+      { nome: "Daniel Castowe", area: "Docente" },
+      { nome: "Estover Chilala", area: "Docente" },
+      { nome: "Evaristo Moises", area: "Docente" },
+      { nome: "Fidel Poutou", area: "Docente" },
+      { nome: "Francisco Tchimiku", area: "Docente" },
+      { nome: "João Brito Capitano", area: "Docente" },
+      { nome: "José Braz", area: "Docente" }
+]
   }
 };
 
